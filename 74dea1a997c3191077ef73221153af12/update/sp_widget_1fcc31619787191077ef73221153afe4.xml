@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.elc-browser-panel {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0 0 1rem #e5e5e5;
+  flex-direction: column;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: .8rem;
+  margin-bottom: 1.6rem;
+
+  .panel-heading {
+    border-bottom: .1rem solid #DADDE2;
+  }
+}
+
+.elc-browser-container {
+  padding: 1rem 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+  overflow: hidden;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{
+	"data": {
+		"title": "Make a request",
+		"empty_message": "No topic browser items found",
+		"topics": [],
+		"widgetsData": []
+	}
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>elc_topic_browser</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>ELC Topic Browser</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	// defaults
+	var browser_id = options.browser_id;
+	data.title = "Error";
+	data.empty_message = "No topic browser items found";
+
+	// validate that browser is provided
+	if (browser_id === undefined) {
+		gs.info("esc_topic_browser; Topic browser option undefined");
+		return;
+	}
+	
+	// query the topic browser
+	var browserGR = new GlideRecord("x_hclel_elc_topic_browser");
+	browserGR.addQuery("sys_id", browser_id);
+	browserGR.setLimit(1);
+	browserGR.query();
+	
+	if (!browserGR.next()) {
+		gs.info("esc_topic_browser: Topic browser not found");
+		return;
+	}
+	
+	data.title = browserGR.getValue("display_label");
+	
+	// query the topic browser items
+	var itemsGR = new GlideRecord("x_hclel_elc_topic_browser_item");
+	itemsGR.addQuery("topic_browser", browser_id);
+	itemsGR.orderBy("order");
+	itemsGR.query();
+
+	data.topics = [];
+	data.widgetsData = [];
+	while (itemsGR.next()) {
+		var topic = itemsGR.getValue("topic");
+		data.topics.push(topic);
+		data.widgetsData.push(
+			$sp.getWidget("elc_topic_card", {
+				show_badge: false,
+				topic: topic
+			})
+		);
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 19:58:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1fcc31619787191077ef73221153afe4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>ELC Topic Browser</sys_name>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_update_name>sp_widget_1fcc31619787191077ef73221153afe4</sys_update_name>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 20:18:24</sys_updated_on>
+        <template><![CDATA[<div class="elc-browser-panel panel">
+	<div class="panel-header">
+    <div class="panel-heading">
+    	<h3 class="panel-title">{{data.title}}</h3>
+    </div>
+  </div>
+  <div class="panel-body elc-browser-container">
+    <span ng-if="data.widgetsData.length == 0">{{data.empty_message}}</span>
+    <div class="elc-browser-item" ng-repeat="widgetData in data.widgetsData">
+      <sp-widget widget="widgetData"></sp-widget>        
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

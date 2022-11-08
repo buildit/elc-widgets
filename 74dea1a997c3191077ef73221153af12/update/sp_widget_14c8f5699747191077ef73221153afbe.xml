@@ -213,7 +213,7 @@ $brand-info: #38AAF4 !default;
 
 	// validate that topic is provided
 	if (topic_id === undefined) {
-		gs.info("esc_topic_card; topic option undefined");
+		gs.debug("topic option undefined");
 		return;
 	}
 
@@ -224,7 +224,7 @@ $brand-info: #38AAF4 !default;
 	topicGR.query();
 
 	if (!topicGR.next()) {
-		gs.info("esc_topic_card; error retrieving topic "+topic_id);
+		gs.debug("error retrieving topic "+topic_id);
 		return;
 	}
 	var active = topicGR.getValue('active');
@@ -233,7 +233,7 @@ $brand-info: #38AAF4 !default;
 
 	// verify the topic is active
 	if (!active) {
-		gs.info("esc_topic_card: topic "+ name +"("+ topic_id +") is not active");
+		gs.debug("topic "+ name +"("+ topic_id +") is not active");
 	}
 
 	// build topic response 
@@ -268,7 +268,7 @@ $brand-info: #38AAF4 !default;
 		imageGR.query();
 		
 		if (!imageGR.next()) {
-			gs.log("esc_it_topic_card; override image (sysId "+ options.image +") not found");
+			gs.debug("override image (sysId "+ options.image +") not found");
 		} else {
 			data.image_uri = imageGR.getValue('name');
 		}
@@ -280,7 +280,7 @@ $brand-info: #38AAF4 !default;
         <sys_created_on>2022-11-08 19:41:03</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>14c8f5699747191077ef73221153afbe</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>ELC Topic Card</sys_name>
         <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
         <sys_policy/>
@@ -288,7 +288,7 @@ $brand-info: #38AAF4 !default;
         <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
         <sys_update_name>sp_widget_14c8f5699747191077ef73221153afbe</sys_update_name>
         <sys_updated_by>daniel.davis</sys_updated_by>
-        <sys_updated_on>2022-11-08 19:55:22</sys_updated_on>
+        <sys_updated_on>2022-11-08 22:02:45</sys_updated_on>
         <template><![CDATA[<div class="elc-card-border"> 
   <a class="elc-card-container" ng-class={{ data.isMobileApp ? 'elc-card-mobile': 'elc-card'}} ng-href={{data.href}}>
     <div class="elc-card-body">

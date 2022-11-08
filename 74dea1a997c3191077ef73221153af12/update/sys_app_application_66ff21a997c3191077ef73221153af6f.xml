@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="">Custom Applications</category>
+        <description>Custom widgets for Estee Lauder companies</description>
+        <device_type>browser</device_type>
+        <hint>Custom widgets for Estee Lauder companies</hint>
+        <name/>
+        <order/>
+        <roles>x_hclel_elc_custom.widgets</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 19:02:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>66ff21a997c3191077ef73221153af6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ELC Custom Widgets</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_update_name>sys_app_application_66ff21a997c3191077ef73221153af6f</sys_update_name>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 19:02:42</sys_updated_on>
+        <title>ELC Custom Widgets</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

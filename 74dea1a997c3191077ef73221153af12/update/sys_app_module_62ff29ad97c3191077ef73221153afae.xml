@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="ELC Custom Widgets">66ff21a997c3191077ef73221153af6f</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>Topic Browser Items</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>4</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 19:02:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>62ff29ad97c3191077ef73221153afae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Topic Browser Items</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_update_name>sys_app_module_62ff29ad97c3191077ef73221153afae</sys_update_name>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 19:02:42</sys_updated_on>
+        <timeline_page/>
+        <title>Topic Browser Items</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

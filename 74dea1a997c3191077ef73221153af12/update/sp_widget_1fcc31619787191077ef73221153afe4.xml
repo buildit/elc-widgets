@@ -60,7 +60,7 @@
 	}
 	
 	// query the topic browser
-	var browserGR = new GlideRecord("x_hclel_elc_topic_browser");
+	var browserGR = new GlideRecord("x_hclel_elc_custom_topic_browser");
 	browserGR.addQuery("sys_id", browser_id);
 	browserGR.setLimit(1);
 	browserGR.query();
@@ -70,10 +70,10 @@
 		return;
 	}
 	
-	data.title = browserGR.getValue("display_label");
+	data.title = browserGR.getValue("display_name");
 	
 	// query the topic browser items
-	var itemsGR = new GlideRecord("x_hclel_elc_topic_browser_item");
+	var itemsGR = new GlideRecord("x_hclel_elc_custom_topic_browser_items");
 	itemsGR.addQuery("topic_browser", browser_id);
 	itemsGR.orderBy("order");
 	itemsGR.query();
@@ -96,7 +96,7 @@
         <sys_created_on>2022-11-08 19:58:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1fcc31619787191077ef73221153afe4</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>ELC Topic Browser</sys_name>
         <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
         <sys_policy/>
@@ -104,7 +104,7 @@
         <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
         <sys_update_name>sp_widget_1fcc31619787191077ef73221153afe4</sys_update_name>
         <sys_updated_by>daniel.davis</sys_updated_by>
-        <sys_updated_on>2022-11-08 22:03:41</sys_updated_on>
+        <sys_updated_on>2022-11-08 22:12:34</sys_updated_on>
         <template><![CDATA[<div class="elc-browser-panel panel">
 	<div class="panel-header">
     <div class="panel-heading">

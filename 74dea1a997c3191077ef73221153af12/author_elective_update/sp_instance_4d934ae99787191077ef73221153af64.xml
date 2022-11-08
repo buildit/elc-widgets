@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">64834ae99787191077ef73221153af59</sp_column>
+        <sp_widget display_value="ELC Topic Card">14c8f5699747191077ef73221153afbe</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 20:28:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4d934ae99787191077ef73221153af64</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_update_name>sp_instance_4d934ae99787191077ef73221153af64</sys_update_name>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 20:29:09</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"topic": {
+		"value": "761f9d6e97c95d5077ef73221153af55",
+		"displayValue": "Hardware"
+	},
+	"title": {
+		"value": "",
+		"displayValue": ""
+	},
+	"description": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=4d934ae99787191077ef73221153af64"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</application>
+        <file_path/>
+        <instance_id>ba6cf9ce6fb2068056007b2f5d3ee4b4</instance_id>
+        <instance_name>hclelcdev</instance_name>
+        <name>sp_instance_4d934ae99787191077ef73221153af64</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;64834ae99787191077ef73221153af59&lt;/sp_column&gt;&lt;sp_widget display_value="ELC Topic Card"&gt;14c8f5699747191077ef73221153afbe&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;daniel.davis&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-08 20:28:20&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;4d934ae99787191077ef73221153af64&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom"&gt;74dea1a997c3191077ef73221153af12&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="ELC Custom Widgets"&gt;74dea1a997c3191077ef73221153af12&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_4d934ae99787191077ef73221153af64&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;daniel.davis&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-08 20:29:09&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"topic": {
+		"value": "761f9d6e97c95d5077ef73221153af55",
+		"displayValue": "Hardware"
+	},
+	"title": {
+		"value": "",
+		"displayValue": ""
+	},
+	"description": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=4d934ae99787191077ef73221153af64"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>773290166</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>5fe2f1259707191077ef73221153af04</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 20:29:09</sys_created_on>
+        <sys_id>c5c3422d9787191077ef73221153af2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18458eeb4bb0000001</sys_recorded_at>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 20:29:09</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>4dc3422dcf87191073421c79a99ed52a</update_guid>
+        <update_guid_history>4dc3422dcf87191073421c79a99ed52a:773290166,9cb34ee9a5871910e35a2408740a3673:-1133801827,c9934ae906871910755756045ccaa166:-186125709</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2022-11-08 16:43:48">62d49665974b191077ef73221153affe</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 21:43:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>00824fcc36954dbf8009d419494da2f1</sys_id>
+        <sys_metadata>4d934ae99787191077ef73221153af64</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_scope_delete display_value="">0374a14193344f2b91e6bd7c083a7321</sys_scope_delete>
+        <sys_update_name>sp_instance_4d934ae99787191077ef73221153af64</sys_update_name>
+        <sys_update_version display_value="sp_instance_4d934ae99787191077ef73221153af64">c5c3422d9787191077ef73221153af2b</sys_update_version>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 21:43:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

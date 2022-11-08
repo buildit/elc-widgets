@@ -29,8 +29,11 @@
         <demo_data>{
 	"data": {
 		"title": "Make a request",
-		"empty_message": "No topic browser items found",
-		"topics": [],
+		"topics": [
+			"aaa",
+			"bbb",
+			"ccc"
+		],
 		"widgetsData": []
 	}
 }</demo_data>
@@ -42,14 +45,13 @@
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
         <name>ELC Topic Browser</name>
-        <option_schema/>
+        <option_schema>[{"displayValue":"Topic Browser","hint":"Selects the list of topics to show in the widget","name":"topic_browser","section":"Data","label":"Topic browser","type":"reference","value":"x_hclel_elc_custom_topic_browser","ed":{"reference":"x_hclel_elc_custom_topic_browser"}}]</option_schema>
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
 	// defaults
 	var browser_id = options.browser_id;
 	data.title = "Error";
-	data.empty_message = "No topic browser items found";
 
 	// validate that browser is provided
 	if (browser_id === undefined) {
@@ -95,7 +97,7 @@
         <sys_created_on>2022-11-08 19:58:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1fcc31619787191077ef73221153afe4</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>ELC Topic Browser</sys_name>
         <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
         <sys_policy/>
@@ -103,7 +105,7 @@
         <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
         <sys_update_name>sp_widget_1fcc31619787191077ef73221153afe4</sys_update_name>
         <sys_updated_by>daniel.davis</sys_updated_by>
-        <sys_updated_on>2022-11-08 20:18:24</sys_updated_on>
+        <sys_updated_on>2022-11-08 21:40:25</sys_updated_on>
         <template><![CDATA[<div class="elc-browser-panel panel">
 	<div class="panel-header">
     <div class="panel-heading">
@@ -111,7 +113,7 @@
     </div>
   </div>
   <div class="panel-body elc-browser-container">
-    <span ng-if="data.widgetsData.length == 0">{{data.empty_message}}</span>
+    <span ng-if="data.widgetsData.length == 0">No topic browser items found</span>
     <div class="elc-browser-item" ng-repeat="widgetData in data.widgetsData">
       <sp-widget widget="widgetData"></sp-widget>        
     </div>

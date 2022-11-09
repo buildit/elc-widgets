@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {
+        <client_script><![CDATA[api.controller=function($window) {
   /* widget controller */
   var c = this;
 	if (c.data.category !== undefined && c.data.topic_id !== undefined) {
 		c.data.href = "/esc?id="+ c.data.category +"&topic_id="+ c.data.topic_id;
 	}
+	
+	/* This target a blank window */
+	c.redirect = function($event) {
+		$event.stopPropagation();
+		$window.open(c.data.href, c.target);
+	};
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>$sp-space--lg : 16px !default;
@@ -33,14 +39,15 @@ $brand-info: #38AAF4 !default;
   border-radius: 0.4rem;
 }
 
-.mesp-favorite .fa {
+.elc-mobile-favorite .fa {
   color: $tropical-rain;
 }
 
 .elc-card {
-  min-height: 134px;
-  max-height: 185px;
-  padding: $mobile-sub-text-font-size;
+  min-height: 10.2rem;
+  max-height: 18.5rem;
+  padding: 1.4rem;
+
   .fa { 
     border: none;
   }
@@ -49,6 +56,13 @@ $brand-info: #38AAF4 !default;
 .elc-card-border {
   border-radius: 0.4rem;
   border: 0.1rem solid #DADDE2;
+}
+
+/* Note that having both elc-card-border and elc-card classes
+ * make the :hover and :focus pseudo-classes independent.
+ */
+.elc-card-border:hover {
+  box-shadow: 0rem 0.2rem 1rem #E5E5E5;
 }
 
 .elc-card:focus {
@@ -200,7 +214,7 @@ $brand-info: #38AAF4 !default;
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
         <name>ELC Topic Card</name>
-        <option_schema>[{"displayValue":"Topic","hint":"Which taxonomy topic to link to when clicked","name":"topic","section":"Data","label":"Choose topic","type":"reference","value":"topic","ed":{"reference":"topic"}},{"hint":"Override the title to be displayed in the card","name":"title","section":"Presentation","label":"Title","type":"string"},{"hint":"Override the short description displayed in the card","name":"description","section":"Presentation","label":"Description","type":"string"},{"displayValue":"Images","hint":"Override the image displayed in the topic card","name":"image","section":"Presentation","label":"Image","type":"reference","value":"db_image","ed":{"reference":"db_image"}}]</option_schema>
+        <option_schema>[{"displayValue":"Topic","hint":"Which taxonomy topic to link to when clicked","name":"topic","section":"Data","label":"Choose topic","type":"reference","value":"topic","ed":{"reference":"topic"}},{"hint":"Override the title to be displayed in the card","name":"title","section":"Presentation","label":"Title","type":"string"},{"hint":"Override the short description displayed in the card","name":"description","section":"Presentation","label":"Description","type":"string"},{"displayValue":"Images","hint":"Override the image displayed in the topic card","name":"image","section":"Presentation","label":"Image","type":"reference","value":"db_image","ed":{"reference":"db_image"}},{"hint":"Adds additional CSS class names to the top-level div within the widget","name":"class_names","section":"Presentation","label":"Class names","type":"string"}]</option_schema>
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
@@ -280,7 +294,7 @@ $brand-info: #38AAF4 !default;
         <sys_created_on>2022-11-08 19:41:03</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>14c8f5699747191077ef73221153afbe</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>ELC Topic Card</sys_name>
         <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
         <sys_policy/>
@@ -288,26 +302,26 @@ $brand-info: #38AAF4 !default;
         <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
         <sys_update_name>sp_widget_14c8f5699747191077ef73221153afbe</sys_update_name>
         <sys_updated_by>daniel.davis</sys_updated_by>
-        <sys_updated_on>2022-11-08 22:02:45</sys_updated_on>
-        <template><![CDATA[<div class="elc-card-border"> 
-  <a class="elc-card-container" ng-class={{ data.isMobileApp ? 'elc-card-mobile': 'elc-card'}} ng-href={{data.href}}>
-    <div class="elc-card-body">
-      <div class="elc-header-container" ng-if="data.header_label">
-        <div class="elc-card-badge">
-          <i class="fa elc-card-icon" ng-class={{ data.header_icon }} aria-hidden="true"></i>
-          <span class="type-padding">{{ data.header_label }}</span>
-        </div>
+        <sys_updated_on>2022-11-09 17:44:39</sys_updated_on>
+        <template><![CDATA[<div class="elc-card-border" ng-class="options.class_names"> 
+  <a class="elc-card-container" 
+     ng-class="data.isMobileApp ? 'elc-card-mobile': 'elc-card'"
+     ng-href={{data.href}}>
+    <div class="elc-header-container" ng-if="data.header_label">
+      <div class="elc-card-badge">
+        <i class="fa elc-card-icon" ng-class={{ data.header_icon }} aria-hidden="true"></i>
+        <span class="type-padding">{{ data.header_label }}</span>
       </div>
-      <div>
+    </div>
+    <div>
+      <div class="elc-card-image-container">
+        <img class="elc-item-image" aria-hidden="true" src={{::data.image_uri}} />
         <div class="elc-card-text-container">
           <div class="elc-item-title text-ellipsis text-ellipsis-two-line">
             <span>{{data.title}}</span>
           </div>
-          <div class="elc-card-image-container">
-            <img class="elc-item-image" aria-hidden="true" src={{::data.image_uri}} />
-            <div class="elc-item-description text-ellipsis text-ellipsis-four-line">
-              <span>{{data.description}}</span>
-            </div>
+          <div class="elc-item-description text-ellipsis text-ellipsis-four-line">
+            <span>{{data.description}}</span>
           </div>
         </div>
       </div>

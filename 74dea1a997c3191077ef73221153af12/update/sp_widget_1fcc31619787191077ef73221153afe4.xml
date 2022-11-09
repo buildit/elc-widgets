@@ -11,20 +11,28 @@
   display: flex;
   box-sizing: border-box;
   border-radius: .8rem;
-  margin-bottom: 1.6rem;
 
   .panel-heading {
     border-bottom: .1rem solid #DADDE2;
   }
 }
 
+.panel-title {
+  font-style: normal;
+  font-size: 2rem;
+  color: #000;
+}
+
 .elc-browser-container {
   padding: 1rem 1.6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   overflow: hidden;
 }
-</css>
+
+.elc-browser-item {
+  padding: 1rem .8rem;
+}</css>
         <data_table>sp_instance</data_table>
         <demo_data>{
 	"data": {
@@ -45,7 +53,7 @@
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
         <name>ELC Topic Browser</name>
-        <option_schema>[{"displayValue":"Topic Browser","hint":"Selects the list of topics to show in the widget","name":"topic_browser","section":"Data","label":"Topic browser","type":"reference","value":"x_hclel_elc_custom_topic_browser","ed":{"reference":"x_hclel_elc_custom_topic_browser"}}]</option_schema>
+        <option_schema>[{"displayValue":"Topic Browser","hint":"Selects the list of topics to show in the widget","name":"topic_browser","section":"Data","label":"Topic browser","type":"reference","value":"x_hclel_elc_custom_topic_browser","ed":{"reference":"x_hclel_elc_custom_topic_browser"}},{"hint":"Adds additional CSS class names to the top-level div within the widget","name":"class_names","section":"Presentation","label":"Class names","type":"string"},{"hint":"Title of the topic browser panel","name":"title","section":"Presentation","default_value":"Title unspecified","label":"Title","type":"string"}]</option_schema>
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
@@ -58,19 +66,6 @@
 		gs.debug("topic browser option undefined");
 		return;
 	}
-	
-	// query the topic browser
-	var browserGR = new GlideRecord("x_hclel_elc_custom_topic_browser");
-	browserGR.addQuery("sys_id", browser_id);
-	browserGR.setLimit(1);
-	browserGR.query();
-	
-	if (!browserGR.next()) {
-		gs.debug("topic browser not found");
-		return;
-	}
-	
-	data.title = browserGR.getValue("display_name");
 	
 	// query the topic browser items
 	var itemsGR = new GlideRecord("x_hclel_elc_custom_topic_browser_items");
@@ -85,7 +80,10 @@
 		data.topics.push(topic);
 		data.widgetsData.push(
 			$sp.getWidget("elc_topic_card", {
-				topic: topic
+				topic: topic,
+				title: itemsGR.getValue("title"),
+				description: itemsGR.getValue("description"),
+				image: itemsGR.getValue("image")
 			})
 		);
 	}
@@ -96,7 +94,7 @@
         <sys_created_on>2022-11-08 19:58:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1fcc31619787191077ef73221153afe4</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>ELC Topic Browser</sys_name>
         <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
         <sys_policy/>
@@ -104,17 +102,17 @@
         <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
         <sys_update_name>sp_widget_1fcc31619787191077ef73221153afe4</sys_update_name>
         <sys_updated_by>daniel.davis</sys_updated_by>
-        <sys_updated_on>2022-11-08 22:12:34</sys_updated_on>
-        <template><![CDATA[<div class="elc-browser-panel panel">
+        <sys_updated_on>2022-11-09 17:48:30</sys_updated_on>
+        <template><![CDATA[<div class="elc-browser-panel panel" ng-class="options.class_names">
 	<div class="panel-header">
     <div class="panel-heading">
-    	<h3 class="panel-title">{{data.title}}</h3>
+    	<h3 class="panel-title">{{options.title}}</h3>
     </div>
   </div>
-  <div class="panel-body elc-browser-container">
+  <div class="elc-browser-container">
     <span ng-if="data.widgetsData.length == 0">No topic browser items found</span>
     <div class="elc-browser-item" ng-repeat="widgetData in data.widgetsData">
-      <sp-widget widget="widgetData"></sp-widget>        
+      <sp-widget widget="widgetData"></sp-widget>    
     </div>
   </div>
 </div>]]></template>

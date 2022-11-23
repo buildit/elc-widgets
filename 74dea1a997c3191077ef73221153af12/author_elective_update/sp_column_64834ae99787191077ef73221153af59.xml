@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <size>4</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="2">24834ae99787191077ef73221153af57</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 20:28:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>64834ae99787191077ef73221153af59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_update_name>sp_column_64834ae99787191077ef73221153af59</sys_update_name>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 20:28:02</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</application>
+        <file_path/>
+        <instance_id>ba6cf9ce6fb2068056007b2f5d3ee4b4</instance_id>
+        <instance_name>hclelcdev</instance_name>
+        <name>sp_column_64834ae99787191077ef73221153af59</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>4</size><size_lg/><size_sm/><size_xs/><sp_row display_value="2">24834ae99787191077ef73221153af57</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>daniel.davis</sys_created_by><sys_created_on>2022-11-08 20:28:02</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>64834ae99787191077ef73221153af59</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope><sys_update_name>sp_column_64834ae99787191077ef73221153af59</sys_update_name><sys_updated_by>daniel.davis</sys_updated_by><sys_updated_on>2022-11-08 20:28:02</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>-699938709</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>5fe2f1259707191077ef73221153af04</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 20:28:02</sys_created_on>
+        <sys_id>ec834ae99787191077ef73221153af5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18458edae5a0000001</sys_recorded_at>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 20:28:02</sys_updated_on>
+        <type>Column</type>
+        <update_guid>e4834ae97b871910f18302ddb6e6175a</update_guid>
+        <update_guid_history>e4834ae97b871910f18302ddb6e6175a:-699938709</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2022-11-08 16:43:49">aad4d665974b191077ef73221153af02</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 21:43:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>70203c488f7f483e880b1e695c529cd9</sys_id>
+        <sys_metadata>64834ae99787191077ef73221153af59</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_scope_delete display_value="">0374a14193344f2b91e6bd7c083a7321</sys_scope_delete>
+        <sys_update_name>sp_column_64834ae99787191077ef73221153af59</sys_update_name>
+        <sys_update_version display_value="sp_column_64834ae99787191077ef73221153af59">ec834ae99787191077ef73221153af5a</sys_update_version>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 21:43:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

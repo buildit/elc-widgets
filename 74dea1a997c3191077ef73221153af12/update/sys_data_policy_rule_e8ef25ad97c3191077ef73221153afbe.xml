@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>topic_browser</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 19:02:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_data_policy display_value="Sets the Topic Browser field to mandatory">24ef25ad97c3191077ef73221153afbc</sys_data_policy>
+        <sys_id>e8ef25ad97c3191077ef73221153afbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>topic_browser</sys_name>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_update_name>sys_data_policy_rule_e8ef25ad97c3191077ef73221153afbe</sys_update_name>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 19:02:17</sys_updated_on>
+        <table>x_hclel_elc_custom_topic_browser_items</table>
+    </sys_data_policy_rule>
+</record_update>

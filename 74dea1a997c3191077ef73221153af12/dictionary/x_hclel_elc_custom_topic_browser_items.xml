@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Topic Browser Items" max_length="40" name="x_hclel_elc_custom_topic_browser_items" sizeclass="5" type="collection">
+        <element label="Description" max_length="50" name="description" type="string"/>
+        <element label="Image" max_length="32" name="image" reference="db_image" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Order" max_length="15" name="order" type="decimal"/>
+        <element label="Title" max_length="50" name="title" type="string"/>
+        <element attributes="encode_utf8=false" display="true" label="Topic" max_length="32" name="topic" reference="topic" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element attributes="encode_utf8=false" label="Topic Browser" max_length="32" name="topic_browser" reference="x_hclel_elc_custom_topic_browser" type="reference"/>
+        <index name="index">
+            <element name="image"/>
+        </index>
+        <index name="index2">
+            <element name="topic_browser"/>
+        </index>
+        <index name="index3">
+            <element name="topic"/>
+        </index>
+    </element>
+</database>

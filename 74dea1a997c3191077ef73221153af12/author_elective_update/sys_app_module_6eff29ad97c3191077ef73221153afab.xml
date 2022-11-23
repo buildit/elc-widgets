@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>false</active>
+        <application display_value="ELC Widgets">66ff21a997c3191077ef73221153af6f</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>All</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_hclel_elc_custom_topic_browser</name>
+        <order>3</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 19:02:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6eff29ad97c3191077ef73221153afab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_update_name>sys_app_module_6eff29ad97c3191077ef73221153afab</sys_update_name>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 19:18:02</sys_updated_on>
+        <timeline_page/>
+        <title>All</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</application>
+        <file_path/>
+        <instance_id>ba6cf9ce6fb2068056007b2f5d3ee4b4</instance_id>
+        <instance_name>hclelcdev</instance_name>
+        <name>sys_app_module_6eff29ad97c3191077ef73221153afab</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>false</active><application display_value="ELC Widgets">66ff21a997c3191077ef73221153af6f</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>All</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_hclel_elc_custom_topic_browser</name><order>3</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>daniel.davis</sys_created_by><sys_created_on>2022-11-08 19:02:42</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6eff29ad97c3191077ef73221153afab</sys_id><sys_mod_count>1</sys_mod_count><sys_name>All</sys_name><sys_overrides/><sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope><sys_update_name>sys_app_module_6eff29ad97c3191077ef73221153afab</sys_update_name><sys_updated_by>daniel.davis</sys_updated_by><sys_updated_on>2022-11-08 19:18:02</sys_updated_on><timeline_page/><title>All</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1672711914</payload_hash>
+        <record_name>All</record_name>
+        <reverted_from/>
+        <source>5fe2f1259707191077ef73221153af04</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 19:18:02</sys_created_on>
+        <sys_id>57737d659707191077ef73221153af20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18458ad98730000001</sys_recorded_at>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 19:18:02</sys_updated_on>
+        <type>Module</type>
+        <update_guid>5f737d651a0719104862c78fb2d1d21f</update_guid>
+        <update_guid_history>5f737d651a0719104862c78fb2d1d21f:-1672711914,e2ff29ad7ec31910487b409bdd4fffad:64051869</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2022-11-08 14:20:14">e7f335e59707191077ef73221153af65</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 19:20:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>10e60074bb804256972e4d5fd16aa211</sys_id>
+        <sys_metadata>6eff29ad97c3191077ef73221153afab</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_scope_delete display_value="">0374a14193344f2b91e6bd7c083a7321</sys_scope_delete>
+        <sys_update_name>sys_app_module_6eff29ad97c3191077ef73221153afab</sys_update_name>
+        <sys_update_version display_value="sys_app_module_6eff29ad97c3191077ef73221153afab">57737d659707191077ef73221153af20</sys_update_version>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 19:20:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

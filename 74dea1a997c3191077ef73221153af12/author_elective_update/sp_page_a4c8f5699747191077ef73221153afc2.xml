@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="DELETE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>test_elc_topic_card</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 19:41:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a4c8f5699747191077ef73221153afc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test_elc_topic_card</sys_name>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_update_name>sp_page_a4c8f5699747191077ef73221153afc2</sys_update_name>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 19:41:03</sys_updated_on>
+        <title>ELC Topic Card - Test Page</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="DELETE" query="documentkey=a4c8f5699747191077ef73221153afc2"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</application>
+        <file_path/>
+        <instance_id>ba6cf9ce6fb2068056007b2f5d3ee4b4</instance_id>
+        <instance_name>hclelcdev</instance_name>
+        <name>sp_page_a4c8f5699747191077ef73221153afc2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>test_elc_topic_card</id><internal>false</internal><omit_watcher>false</omit_watcher><public>false</public><roles/><seo_script/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>daniel.davis</sys_created_by><sys_created_on>2022-11-08 19:41:03</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a4c8f5699747191077ef73221153afc2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test_elc_topic_card</sys_name><sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope><sys_update_name>sp_page_a4c8f5699747191077ef73221153afc2</sys_update_name><sys_updated_by>daniel.davis</sys_updated_by><sys_updated_on>2022-11-08 19:41:03</sys_updated_on><title>ELC Topic Card - Test Page</title><use_seo_script>false</use_seo_script></sp_page><sys_translated_text action="delete_multiple" query="documentkey=a4c8f5699747191077ef73221153afc2"/></record_update>]]></payload>
+        <payload_hash>-1604479629</payload_hash>
+        <record_name>test_elc_topic_card</record_name>
+        <reverted_from/>
+        <source>5fe2f1259707191077ef73221153af04</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 19:41:03</sys_created_on>
+        <sys_id>a8c8f5699747191077ef73221153afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18458c2ac6b0000001</sys_recorded_at>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 19:41:03</sys_updated_on>
+        <type>Page</type>
+        <update_guid>a0c8f569944719107db9b90ce75719c5</update_guid>
+        <update_guid_history>a0c8f569944719107db9b90ce75719c5:-1604479629</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2022-11-08 16:43:49">22d4d665974b191077ef73221153af71</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 21:43:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_page">sp_page</sys_db_object>
+        <sys_id>4fca111aec7d4a28add0dfd6970c2144</sys_id>
+        <sys_metadata>a4c8f5699747191077ef73221153afc2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test_elc_topic_card</sys_name>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_scope_delete display_value="">0374a14193344f2b91e6bd7c083a7321</sys_scope_delete>
+        <sys_update_name>sp_page_a4c8f5699747191077ef73221153afc2</sys_update_name>
+        <sys_update_version display_value="sp_page_a4c8f5699747191077ef73221153afc2">a8c8f5699747191077ef73221153afc5</sys_update_version>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-08 21:43:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

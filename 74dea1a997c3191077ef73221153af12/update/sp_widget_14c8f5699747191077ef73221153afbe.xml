@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($window, $location) {
+  /* widget controller */
+  var c = this;
+	if (c.data.category !== undefined && c.data.topic_id !== undefined) {
+		// Use AngularJS $location to get service portal path
+		c.data.href = $location.path() +"?id="+ c.data.category +"&topic_id="+ c.data.topic_id;
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>$sp-space--lg : 16px !default;
+$sp-space--md : 12px !default;
+$sp-space--sm : 8px !default;
+$sp-space--xs : 4px !default;
+
+$font-size-base : 16px !default;
+$font-size-xl : 24px !default;
+$font-size-xs : 12px !default;
+
+$text-primary : #181A1F !default;
+$text-secondary: #474D5A !default;
+$text-tertiary: #656E81 !default;
+$mobile-title-font-size : 16px;
+$mobile-sub-text-font-size : 14px;
+$mobile-badge-font-size: 13px;
+
+$brand-info: #38AAF4 !default;
+
+.elc-card-container {
+  height: 100%;
+  display: block;
+  border-radius: 0.4rem;
+}
+
+.elc-mobile-favorite .fa {
+  color: $tropical-rain;
+}
+
+.elc-card {
+  min-height: 10.2rem;
+  max-height: 18.5rem;
+  padding: 1.4rem;
+
+  .fa { 
+    border: none;
+  }
+}
+
+.elc-card-border {
+  border-radius: 0.4rem;
+  border: 0.1rem solid #DADDE2;
+}
+
+/* Note that having both elc-card-border and elc-card classes
+ * make the :hover and :focus pseudo-classes independent.
+ */
+.elc-card-border:hover {
+  box-shadow: 0rem 0.2rem 1rem #E5E5E5;
+}
+
+.elc-card:focus {
+  box-shadow: 0rem 0rem 0rem 0.15rem $input-border-focus;
+  border-radius: 0.6rem;
+}
+
+.elc-card-mobile {
+  min-height: 134px;
+  max-height: 185px;
+  padding: $sp-space--lg 0;
+
+  .fa {
+    border: none;
+  }
+  .elc-card-badge {
+    font-size: $mobile-badge-font-size;
+    font-weight: 500;
+  }
+  .elc-card-icon {
+    color: #333E3F;
+  }
+  .type-padding {
+    color: #333E3F;
+  }
+  .elc-item-title{
+    font-size: $mobile-title-font-size;
+    color: #333E3F;
+  }
+  .elc-item-description {
+    font-weight: 400;
+    font-size: $mobile-sub-text-font-size;
+    color: #637274;
+  }
+}
+
+.elc-card-icon {
+  font-size: $font-size-base;
+  color: $gray-base;
+}
+
+.elc-card-badge {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: $font-size-xs;
+  color: $color-black-dark;
+}
+
+.type-padding {
+  padding-left: 0.4rem;
+  color: $text-color;
+}
+
+.elc-header-container {
+  margin-bottom: $sp-space--sm;
+  min-height: 32px;
+  margin-top: -6px;
+}
+
+.elc-margin-left {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  column-gap: $sp-space--xs;
+  position: absolute;
+  top: 0.8rem;
+  right: 0.6rem;
+  min-height: 3.2rem;
+}
+
+.elc-card-image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.elc-item-image {
+  min-width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  align-self: flex-start;
+  margin-right: 1rem;
+}
+
+.elc-card-text-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  word-break: break-word;
+}
+
+.elc-item-title {
+  min-height: 20px;
+  color: $text-primary;
+  font-size: $font-size-base;
+  font-weight: 600;
+  margin-bottom: $sp-space--sm;
+}
+
+.elc-item-description {
+  min-height: 20px;
+  color: $text-tertiary;
+  font-size: $font-size-xs;
+  font-weight: normal;
+  margin-bottom: $sp-space--sm;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.text-ellipsis-one-line {
+  -webkit-line-clamp: 1;
+}
+
+.text-ellipsis-two-line {
+  -webkit-line-clamp: 2;
+}
+
+/* IE specific Class to override */
+@media screen and (-ms-high-contrast: active),
+  (-ms-high-contrast: none) {
+    .text-ellipsis {
+      white-space: nowrap;
+    }
+    .image .elc-card-text-container .text-ellipsis {
+      width: 234px;
+    }
+    .elc-card-text-container .text-ellipsis {
+      width: 320px;
+    }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{
+	"options": {
+		"topic": "b2085cfd97f8d5d077ef73221153af97"
+	}
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>elc_topic_card</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>ELC Topic Card</name>
+        <option_schema>[{"displayValue":"Topic","hint":"Which taxonomy topic to link to when clicked","name":"topic","section":"Data","label":"Choose topic","type":"reference","value":"topic","ed":{"reference":"topic"}},{"hint":"Override the title to be displayed in the card","name":"title","section":"Presentation","label":"Title","type":"string"},{"hint":"Override the short description displayed in the card","name":"description","section":"Presentation","label":"Description","type":"string"},{"displayValue":"Images","hint":"Override the image displayed in the topic card","name":"image","section":"Presentation","label":"Image","type":"reference","value":"db_image","ed":{"reference":"db_image"}},{"hint":"Adds additional CSS class names to the top-level div within the widget","name":"class_names","section":"Presentation","label":"Class names","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	// defaults
+	var topic_id = options.topic;
+	data.category = undefined;
+	data.title = "Error";
+	data.description = "Topic not found or inactive";
+	data.image_uri = undefined;
+
+	// validate that topic is provided
+	if (topic_id === undefined) {
+		gs.debug("topic option undefined");
+		return;
+	}
+
+	// query the topic record
+	var topicGR = new GlideRecord("topic");
+	topicGR.addQuery("sys_id", topic_id);
+	topicGR.setLimit(1);
+	topicGR.query();
+
+	if (!topicGR.next()) {
+		gs.debug("error retrieving topic "+topic_id);
+		return;
+	}
+	var active = topicGR.getValue('active');
+	var name = topicGR.getValue('name');
+	var icon = topicGR.getValue('icon');
+
+	// verify the topic is active
+	if (!active) {
+		gs.debug("topic "+ name +"("+ topic_id +") is not active");
+	}
+
+	// build topic response 
+	data.topic_id = data.sys_id = topic_id;
+	data.category = "emp_taxonomy_topic";
+	data.table = "topic";
+	data.title = name;
+	data.description = topicGR.getValue('description');
+	if (icon !== undefined) {
+		data.image_uri = icon +'.iix';
+	}
+	
+	// build favorite data
+	data.isMobileApp = $sp.getParameter('view') === 'mobile';
+	data.favoriteWidget = $sp.getWidget('ec_favorite', {
+		'table': 'topic',
+		'sys_id': topic_id
+	});																		
+
+	// override options
+	if (options.title) {
+		data.title = options.title;
+	}
+	if (options.description) {
+		data.description = options.description;
+	}
+	if (options.image) {
+		// image override is a reference - retrieve the name, which is the path.
+		var imageGR = new GlideRecord('db_image');
+		imageGR.addQuery('sys_id', options.image);
+		imageGR.setLimit(1);
+		imageGR.query();
+		
+		if (!imageGR.next()) {
+			gs.debug("override image (sysId "+ options.image +") not found");
+		} else {
+			data.image_uri = imageGR.getValue('name');
+		}
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>daniel.davis</sys_created_by>
+        <sys_created_on>2022-11-08 19:41:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>14c8f5699747191077ef73221153afbe</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>ELC Topic Card</sys_name>
+        <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+        <sys_update_name>sp_widget_14c8f5699747191077ef73221153afbe</sys_update_name>
+        <sys_updated_by>daniel.davis</sys_updated_by>
+        <sys_updated_on>2022-11-09 21:55:17</sys_updated_on>
+        <template><![CDATA[<div class="elc-card-border" ng-class="options.class_names"> 
+  <a class="elc-card-container" 
+     ng-class="data.isMobileApp ? 'elc-card-mobile': 'elc-card'"
+     ng-href={{data.href}}>
+    <div class="elc-header-container" ng-if="data.header_label">
+      <div class="elc-card-badge">
+        <i class="fa elc-card-icon" ng-class={{ data.header_icon }} aria-hidden="true"></i>
+        <span class="type-padding">{{ data.header_label }}</span>
+      </div>
+    </div>
+    <div>
+      <div class="elc-card-image-container">
+        <img class="elc-item-image" aria-hidden="true" src={{::data.image_uri}} />
+        <div class="elc-card-text-container">
+          <div class="elc-item-title text-ellipsis text-ellipsis-two-line">
+            <span>{{data.title}}</span>
+          </div>
+          <div class="elc-item-description text-ellipsis text-ellipsis-four-line">
+            <span>{{data.description}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <div class="elc-margin-left">
+    <div ng-class="{'elc-mobile-favorite': data.isMobileApp}" class="favorite-widget-container">
+      <sp-widget widget="data.favoriteWidget"></sp-widget>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

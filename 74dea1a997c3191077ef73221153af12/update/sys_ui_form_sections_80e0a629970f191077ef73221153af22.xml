@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="80e0a629970f191077ef73221153af22" sys_domain="global" table="x_hclel_elc_custom_topic_browser_items" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>daniel.davis</sys_created_by>
+            <sys_created_on>2022-11-08 22:36:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44e0a629970f191077ef73221153af25</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_hclel_elc_custom_topic_browser_items" name="x_hclel_elc_custom_topic_browser_items" sys_domain="global" view="Default view">80e0a629970f191077ef73221153af22</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_hclel_elc_custom_topic_browser_items" sys_domain="global" view="Default view">f466fda99707191077ef73221153afb5</sys_ui_section>
+            <sys_updated_by>daniel.davis</sys_updated_by>
+            <sys_updated_on>2022-11-08 22:36:21</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>daniel.davis</sys_created_by>
+            <sys_created_on>2022-11-08 22:36:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44e0a629970f191077ef73221153af26</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_hclel_elc_custom_topic_browser_items" name="x_hclel_elc_custom_topic_browser_items" sys_domain="global" view="Default view">80e0a629970f191077ef73221153af22</sys_ui_form>
+            <sys_ui_section caption="Override Topic" display_value="Override Topic" name="x_hclel_elc_custom_topic_browser_items" sys_domain="global" view="Default view">48e0a629970f191077ef73221153af1f</sys_ui_section>
+            <sys_updated_by>daniel.davis</sys_updated_by>
+            <sys_updated_on>2022-11-08 22:36:21</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_hclel_elc_custom_topic_browser_items</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>daniel.davis</sys_created_by>
+            <sys_created_on>2022-11-08 22:36:21</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80e0a629970f191077ef73221153af22</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_hclel_elc_custom_topic_browser_items</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
+            <sys_update_name>sys_ui_form_sections_80e0a629970f191077ef73221153af22</sys_update_name>
+            <sys_updated_by>daniel.davis</sys_updated_by>
+            <sys_updated_on>2022-11-08 22:36:21</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -3,7 +3,11 @@
         <category>custom</category>
         <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
         <controller_as>c</controller_as>
-        <css>.elc-browser-panel {
+        <css>
+$elc-browser-template-columns: repeat(3, 1fr) !default;
+$elc-browser-template-rows: auto !default;
+
+.elc-browser-panel {
   position: relative;
   background: #ffffff;
   box-shadow: 0 0 1rem #e5e5e5;
@@ -26,7 +30,8 @@
 .elc-browser-container {
   padding: 1rem 1.6rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: $elc-browser-template-columns;
+  grid-template-rows: $elc-browser-template-rows;
   overflow: hidden;
 }
 
@@ -94,7 +99,7 @@
         <sys_created_on>2022-11-08 19:58:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1fcc31619787191077ef73221153afe4</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>ELC Topic Browser</sys_name>
         <sys_package display_value="ELC Custom Widgets" source="x_hclel_elc_custom">74dea1a997c3191077ef73221153af12</sys_package>
         <sys_policy/>
@@ -102,7 +107,7 @@
         <sys_scope display_value="ELC Custom Widgets">74dea1a997c3191077ef73221153af12</sys_scope>
         <sys_update_name>sp_widget_1fcc31619787191077ef73221153afe4</sys_update_name>
         <sys_updated_by>daniel.davis</sys_updated_by>
-        <sys_updated_on>2022-11-09 17:48:30</sys_updated_on>
+        <sys_updated_on>2022-11-14 19:40:02</sys_updated_on>
         <template><![CDATA[<div class="elc-browser-panel panel" ng-class="options.class_names">
 	<div class="panel-header">
     <div class="panel-heading">
